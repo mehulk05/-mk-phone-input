@@ -1,0 +1,47 @@
+{
+  "name": "ng-intl-tel-input",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": ">=12.0.0",
+    "@angular/core": ">=12.0.0",
+    "@angular/forms": ">=12.0.0",
+    "google-libphonenumber": ">=3.2.3",
+    "intl-tel-input": ">=17.0.3",
+    "ngx-bootstrap": ">=6.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "repository": {
+		"type": "git",
+		"url": "git+https://github.com/webcat12345/ngx-intl-tel-input"
+	},
+	"author": {
+		"name": "mehul kothari",
+		"email": "mehulkothari05@gmail.com"
+	},
+	"keywords": [
+		"angular",
+		"ng8",
+		"ng9",
+		"ng10",
+		"angular 8",
+		"angular 9",
+		"angular 10",
+		"angular 11",
+		"angular 12",
+		"angular 13",
+    	"angular 14",
+		"intl-tel-input",
+		"phone number",
+		"validation"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/webcat12345/ngx-intl-tel-input/issues"
+	},
+	"devDependencies": {
+		"@types/google-libphonenumber": "^7.4.17"
+	},
+  "sideEffects": false
+}

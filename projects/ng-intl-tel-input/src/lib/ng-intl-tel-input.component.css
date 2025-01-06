@@ -1,0 +1,107 @@
+li.iti__country:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
+    right: auto;
+    left: 0;
+}
+
+
+.iti__flag-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 1px;
+}
+
+.iti__selected-flag {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 6px 0 8px;
+}
+
+.iti__selected-flag.dropdown-toggle:after {
+	content: none;
+}
+.iti__flag-container.disabled {
+	cursor: default !important;
+}
+.iti.iti--allow-dropdown .flag-container.disabled:hover .iti__selected-flag {
+	background: none;
+}
+.country-dropdown {
+	border: 1px solid #ccc;
+	width: fit-content;
+	padding: 1px;
+	border-collapse: collapse;
+}
+.search-container {
+	position: relative;
+}
+.search-container input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	padding-left: 10px;
+}
+.search-icon {
+	position: absolute;
+	z-index: 2;
+	width: 25px;
+	margin: 1px 10px;
+}
+.iti__country-list {
+	position: relative;
+	border: none;
+}
+
+.iti input#country-search-box {
+	padding-left: 6px;
+}
+
+.iti .selected-dial-code {
+	margin-left: 6px;
+}
+
+.iti.separate-dial-code .iti__selected-flag,
+.iti.separate-dial-code.iti--allow-dropdown.iti-sdc-2 .iti__selected-flag,
+.iti.separate-dial-code.iti--allow-dropdown.iti-sdc-3 .iti__selected-flag,
+.iti.separate-dial-code.iti--allow-dropdown.iti-sdc-4 .iti__selected-flag {
+	width: 93px;
+}
+
+.iti.separate-dial-code input,
+.iti.separate-dial-code.iti--allow-dropdown.iti-sdc-2 input,
+.iti.separate-dial-code.iti--allow-dropdown.iti-sdc-3 input,
+.iti.separate-dial-code.iti--allow-dropdown.iti-sdc-4 input {
+	padding-left: 98px;
+}
+
+.iti input, .iti input[type=text], .iti input[type=tel] {
+    position: relative;
+    z-index: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-right: 36px;
+    margin-right: 0;
+}
+
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], 
+.iti--allow-dropdown input[type=tel], 
+.iti--separate-dial-code input, 
+.iti--separate-dial-code input[type=text], 
+.iti--separate-dial-code input[type=tel] {
+    padding-right: 6px;
+    padding-left: 52px;
+    margin-left: 0;
+}
+
+.iti__flag-container.open + input {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}

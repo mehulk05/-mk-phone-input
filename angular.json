@@ -3,5 +3,195 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "mk-phone-input": {
+      "projectType": "library",
+      "root": "projects/mk-phone-input",
+      "sourceRoot": "projects/mk-phone-input/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/mk-phone-input/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mk-phone-input/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/mk-phone-input/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/mk-phone-input/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "mk-phone-input-test": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/mk-phone-input-test",
+      "sourceRoot": "projects/mk-phone-input-test/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/mk-phone-input-test",
+            "index": "projects/mk-phone-input-test/src/index.html",
+            "browser": "projects/mk-phone-input-test/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/mk-phone-input-test/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/mk-phone-input-test/public"
+              }
+            ],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "./node_modules/intl-tel-input/build/css/intlTelInput.css",
+              "projects/mk-phone-input-test/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "mk-phone-input-test:build:production"
+            },
+            "development": {
+              "buildTarget": "mk-phone-input-test:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/mk-phone-input-test/tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/mk-phone-input-test/public"
+              }
+            ],
+            "styles": [
+              "projects/mk-phone-input-test/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "mk-phone-input-v1": {
+      "projectType": "library",
+      "root": "projects/mk-phone-input-v1",
+      "sourceRoot": "projects/mk-phone-input-v1/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/mk-phone-input-v1/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mk-phone-input-v1/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/mk-phone-input-v1/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/mk-phone-input-v1/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "ng-intl-tel-input": {
+      "projectType": "library",
+      "root": "projects/ng-intl-tel-input",
+      "sourceRoot": "projects/ng-intl-tel-input/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ng-intl-tel-input/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-intl-tel-input/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ng-intl-tel-input/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ng-intl-tel-input/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
   }
 }

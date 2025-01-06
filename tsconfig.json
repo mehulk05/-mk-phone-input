@@ -7,6 +7,17 @@
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
+    "paths": {
+      "mk-phone-input": [
+        "./dist/mk-phone-input"
+      ],
+      "mk-phone-input-v1": [
+        "./dist/mk-phone-input-v1"
+      ],
+      "ng-intl-tel-input": [
+        "./dist/ng-intl-tel-input"
+      ]
+    },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
@@ -16,7 +27,9 @@
     "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
-    "module": "ES2022"
+    "module": "ES2022",
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

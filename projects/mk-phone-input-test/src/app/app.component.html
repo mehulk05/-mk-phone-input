@@ -1,0 +1,29 @@
+<h1>ngx-mat-tel-input</h1>
+<form [formGroup]="myFormGroup" (ngSubmit)="onSubmit()" autocomplete="off">
+ 
+  <div class="wrapper">
+    <lib-ng-intl-tel-input [cssClass]="'custom'"
+      [preferredCountries]="preferredCountries"
+      [enableAutoCountrySelect]="true"
+      [enablePlaceholder]="true"
+      [searchCountryFlag]="true"
+      [searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]"
+      [selectFirstCountry]="false"
+      [selectedCountryISO]="CountryISO.UnitedStates"
+      [maxLength]="15"
+      [phoneValidation]="true"
+      [separateDialCode]="separateDialCode"
+      [numberFormat]="PhoneNumberFormat.National"
+      name="phone"
+      (blur)="onBlur($event)"
+      formControlName="phoneNumber">
+    </lib-ng-intl-tel-input>
+  </div>
+</form>
+
+<dl>
+  <dt>Input value:</dt>
+  <dd *ngIf="phoneNumber.value; then thenBlock else elseBlock"></dd>
+  <ng-template #thenBlock>{{phoneNumber.value | json}}</ng-template>
+  <ng-template #elseBlock><i>null</i></ng-template>
+</dl>

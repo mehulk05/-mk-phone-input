@@ -1,0 +1,14 @@
+{
+  "name": "@growth99_plus/mk-phone-input",
+  "version": "5.0.0",
+  "peerDependencies": {
+   "@angular/common": ">=15.0.0",
+    "@angular/core": ">=15.0.0",
+     "@angular/cdk": ">=15.0.0",
+    "@angular/material": ">=15.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
