@@ -471,7 +471,7 @@ export class NgIntlTelInputComponent implements OnInit, OnChanges {
 	}
 
 	/**
-	 * Clearing the list to avoid duplicates (https://github.com/webcat12345/ngx-intl-tel-input/issues/248)
+	 * Clearing the list to avoid duplicates (https://github.com/mehulk05/-mk-phone-input)
 	 */
 	protected fetchCountryData(): void {
 		this.allCountries = [];

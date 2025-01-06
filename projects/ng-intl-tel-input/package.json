@@ -14,7 +14,7 @@
   },
   "repository": {
 		"type": "git",
-		"url": "git+https://github.com/webcat12345/ngx-intl-tel-input"
+		"url": "git+https://github.com/mehulk05/-mk-phone-input"
 	},
 	"author": {
 		"name": "mehul kothari",
@@ -38,7 +38,7 @@
 	],
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/webcat12345/ngx-intl-tel-input/issues"
+		"url": "https://github.com/mehulk05/-mk-phone-input/issues"
 	},
 	"devDependencies": {
 		"@types/google-libphonenumber": "^7.4.17"
