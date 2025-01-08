@@ -2,15 +2,14 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { CommonModule } from '@angular/common';
-import { MkPhoneInputV1Module } from '../../../mk-phone-input-v1/src/public-api';
-import { MkPhoneInputComponent } from '../../../mk-phone-input/src/public-api';
-import { CountryISO, NgIntlTelInputModule, PhoneNumberFormat, SearchCountryField } from '../../../ng-intl-tel-input/src/public-api';
+import { NgInternationalTelInputModule } from '../../../ng-international-tel-input/src/lib/ng-international-tel-input.module';
+import { CountryISO, PhoneNumberFormat, SearchCountryField } from '../../../ng-international-tel-input/src/public-api';
 
 
 @Component({
   selector: 'app-root',
   imports: [CommonModule,
-    NgIntlTelInputModule,
+    NgInternationalTelInputModule,
     ReactiveFormsModule,
     MatFormFieldModule],
   templateUrl: './app.component.html',

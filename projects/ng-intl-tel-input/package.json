@@ -1,6 +1,6 @@
 {
-  "name": "ng-intl-tel-input",
-  "version": "0.0.1",
+  "name": "ng-international-tel-input",
+  "version": "1.1.0",
   "peerDependencies": {
     "@angular/common": ">=12.0.0",
     "@angular/core": ">=12.0.0",

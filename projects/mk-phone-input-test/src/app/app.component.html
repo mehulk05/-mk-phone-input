@@ -2,7 +2,7 @@
 <form [formGroup]="myFormGroup" (ngSubmit)="onSubmit()" autocomplete="off">
  
   <div class="wrapper">
-    <lib-ng-intl-tel-input [cssClass]="'custom'"
+    <lib-ng-international-tel-input [cssClass]="'custom'"
       [preferredCountries]="preferredCountries"
       [enableAutoCountrySelect]="true"
       [enablePlaceholder]="true"
@@ -17,8 +17,10 @@
       name="phone"
       (blur)="onBlur($event)"
       formControlName="phoneNumber">
-    </lib-ng-intl-tel-input>
+    </lib-ng-international-tel-input>
   </div>
+
+  {{myFormGroup.controls['phoneNumber'].errors | json}}
 </form>
 
 <dl>

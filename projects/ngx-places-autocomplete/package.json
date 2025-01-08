@@ -1,0 +1,45 @@
+{
+  "name": "ngx-places-autocomplete",
+  "version": "0.0.1",
+
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "peerDependencies": {
+    "@angular/common": ">=12.0.0",
+    "@angular/core": ">=12.0.0"
+  },
+  "homepage": "https://github.com/mehulk05/-mk-phone-input",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehulk05/-mk-phone-input"
+  },
+  "author": {
+    "name": "mehul kothari",
+    "email": "mehulkothari05@gmail.com"
+  },
+  "keywords": [
+    "angular",
+    "ng8",
+    "ng9",
+    "ng10",
+    "angular 8",
+    "angular 9",
+    "angular 10",
+    "angular 11",
+    "angular 12",
+    "angular 13",
+    "angular 14",
+    "intl-tel-input",
+    "phone number",
+    "validation",
+    "autocomplete",
+    "google places"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mehulk05/-mk-phone-input/issues"
+  }
+}

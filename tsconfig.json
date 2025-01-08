@@ -14,8 +14,20 @@
       "mk-phone-input-v1": [
         "./dist/mk-phone-input-v1"
       ],
+      "ng-agm-core": [
+        "./dist/ng-agm-core"
+      ],
+      "ng-google-places-autocomplete": [
+        "./dist/ng-google-places-autocomplete"
+      ],
+      "ng-international-tel-input": [
+        "./dist/ng-international-tel-input"
+      ],
       "ng-intl-tel-input": [
         "./dist/ng-intl-tel-input"
+      ],
+      "ngx-places-autocomplete": [
+        "./dist/ngx-places-autocomplete"
       ]
     },
     "noImplicitReturns": true,

@@ -7,7 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "package-for-npm": "ng build mk-phone-input --configuration production"
+    "package-for-npm": "ng build mk-phone-input --configuration production",
+    "package-for-npm-tel-input": "ng build ng-international-tel-input --configuration production",
+    "package-for-ng-google": "ng build ngx-places-autocomplete --configuration production"
+
   },
   "private": false,
   "dependencies": {
@@ -24,6 +27,7 @@
     "boostrap": "^2.0.0",
     "google-libphonenumber": "^3.2.32",
     "intl-tel-input": "^25.2.1",
+    "ng-international-tel-input": "^1.1.0",
     "ngx-bootstrap": "^19.0.1",
     "ngx-mat-select-search": "^7.0.9",
     "rxjs": "~7.8.0",
